@@ -4,6 +4,7 @@ import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import Usuario from "../models/Usuario";
 import { cadastrarUsuario } from "../services/Service";
 import { RotatingLines } from "react-loader-spinner";
+import './Cadastro.css'
 
 function Cadastro() {
 
@@ -55,10 +56,10 @@ e.preventDefault()
     setIsLoading(true)
 
     try{
-    await cadastrarUsuario(`/usuarios/cadastrar`, usuario, setUsuario)
-    alert('Usuário cadastrado com sucesso!')
+        await cadastrarUsuario(`/usuarios/cadastrar`, usuario, setUsuario)
+        alert('Usuário cadastrado com sucesso!')
     }catch(error){
-    alert('Erro ao cadastrar o usuário!')
+        alert('Erro ao cadastrar o usuário!')
     }
 }else{
     alert('Dados do usuário inconsistentes! Verifique as informações do cadastro.')
@@ -141,7 +142,7 @@ return (
         <div className="flex justify-around w-full gap-8">
         <button
             type="reset"
-            className="rounded text-white bg-red-400 hover:bg-red-700 w-1/2 py-2"
+            className="rounded text-white bg-red-400 hover:bg-red-700 w-1/2 py-2" onClick={retornar}
         >
             Cancelar
         </button>
