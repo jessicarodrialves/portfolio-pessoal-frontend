@@ -3,7 +3,7 @@ import { RotatingLines } from "react-loader-spinner";
 import { useNavigate, useParams } from "react-router-dom";
 import { AuthContext } from "../../../contexts/AuthContext";
 import Tema from "../../../models/Tema";
-import { buscar } from "../../../services/Service";
+import { atualizar, buscar, cadastrar } from "../../../services/Service";
 
 function FormTema() {
 
@@ -132,10 +132,4 @@ return (
 
 export default FormTema;
 
-function atualizar(arg0: string, tema: Tema, setTema: Dispatch<SetStateAction<Tema>>, arg3: { headers: { Authorization: string; }; }) {
-    throw new Error("Function not implemented.");
-}
-function cadastrar(arg0: string, tema: Tema, setTema: Dispatch<SetStateAction<Tema>>, arg3: { headers: { Authorization: string; }; }) {
-    throw new Error("Function not implemented.");
-}
 

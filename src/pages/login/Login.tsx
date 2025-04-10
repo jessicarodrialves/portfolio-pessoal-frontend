@@ -1,8 +1,8 @@
 import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 import { ChangeEvent, useContext, useEffect, useState } from 'react';
-import { AuthContext } from '../contexts/AuthContext';
-import UsuarioLogin from '../models/UsuarioLogin';
+import { AuthContext } from '../../contexts/AuthContext';
+import UsuarioLogin from '../../models/UsuarioLogin';
 
 function Login() {
 
@@ -73,6 +73,8 @@ return (
                 <p>
                     Ainda não tem uma conta?{' '}
                     <Link to="/cadastro" className="text-indigo-800 hover:underline">
+                    
+
                     Cadastre-se
                     </Link>
                 </p>
