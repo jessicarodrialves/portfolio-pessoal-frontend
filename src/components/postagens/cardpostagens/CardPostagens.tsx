@@ -13,8 +13,9 @@ function CardPostagem({ postagem }: CardPostagensProps) {
             <div>
                 <div className="flex w-full bg-indigo-400 py-2 px-4 items-center gap-4">
                     <img
-                        src={"https://github.com/jessicarodrialves.png"}
+                        src={'https://uploads.diariodopoder.com.br/2024/08/ca434650-mprj-conta-com-robo-de-registro-de-candidaturas-para-identificar-irregularidades-ilustracao-mprj-960x640.jpg'}
                         className='h-12 rounded-full'
+                        
                         alt={postagem.usuario?.nome} />
                     <h3 className='text-lg font-bold text-center uppercase'>
                         {postagem.usuario?.nome}
